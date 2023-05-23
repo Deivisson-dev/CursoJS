@@ -1,1 +1,1 @@
-“# Project Basic Git”
+Curso de JavaScript do canal curso em vídeo
