@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: rgb(48, 48, 177);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+
+#result{
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    background-color: white;
+}
+
+#input-ano{
+    display: flex;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+#input-sex{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+    gap: 5px;
+
+
+}
+
+h3{
+    padding-right: 20px;
+}
+
+#button{
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+#imagem{
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}

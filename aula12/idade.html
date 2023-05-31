@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/aula12/idade.css">
+    <title>Calcular Idade</title>
+</head>
+<body>
+    <h1>Verificador de Idade</h1>
+    <div id="result">
+        <div id="input-ano">
+            <label for="nasc">Ano de nascimento:</label>
+            <input type="number" name="nasc" id="nasc" required>
+        </div>
+        <div id="input-sex">
+            <h3>Sexo:</h3>
+            <label for="sxmas">Masculino</label>
+            <input type="radio" name="sx" id="sxmas" required>
+            <label for="sxfem">Feminino</label>
+            <input type="radio" name="sx" id="sxfem" required>
+        </div>
+        
+        <input type="button" value="Verificar" id="button" onclick="calcIdade()">
+        <h2 id="txt"></h2>
+        <img src="" id="imagem">
+    </div>
+
+
+
+
+
+
+<script src="/aula12/idade.js"></script>
+</body>
+</html>
