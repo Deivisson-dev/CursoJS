@@ -57,3 +57,7 @@ h2{
     display: flex;
     margin-top: 20px;
 }
+
+#alert_boot{
+    display: none;
+}

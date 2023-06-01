@@ -5,7 +5,13 @@ function calcIdade(){
     const res = document.getElementById('result')
     const nasc = document.getElementById('nasc')
     const img = document.getElementById('imagem')
+    const erro = document.getElementById('alert_boot')
 
+    if (nasc.value.length == 0 || nasc.value > ano){
+        erro.style.display = "block"
+        const txt = document.getElementById('txt').style.display = "none"
+        img.style.display = "none"
+    }
     const ano_digitado = Number(nasc.value)
 
     const data_nascimento = ano - ano_digitado
