@@ -7,8 +7,11 @@ function calcIdade(){
     const img = document.getElementById('imagem')
     const erro = document.getElementById('alert_boot')
 
+    erro.style.display = "none"
+
     if (nasc.value.length == 0 || nasc.value > ano){
-        erro.style.display = "block"
+        erro.style.display = "flex"
+        erro.style.alignItems = "center"
         const txt = document.getElementById('txt').style.display = "none"
         img.style.display = "none"
     }
