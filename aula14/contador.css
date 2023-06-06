@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: rgb(48, 48, 177);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+
+#result{
+    width: 900px;
+    height: 500px;
+    margin: auto;
+    background-color: white;
+}
+
+.input-inicio{
+    display: flex;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+
+.input-fim{
+    display: flex;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+
+.input-passo{
+    display: flex;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+h3{
+    padding-right: 20px;
+}
+
+#button{
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#imagem{
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+#alert_boot{
+    display: none;
+}
+
+svg{
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
