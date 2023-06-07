@@ -1,18 +1,27 @@
+function myFunction(){
+    let tabuada = document.getElementById('tabuada')
+    tabuada.style.display = "none"
+}
+
 function tabuada(){
     let num = document.getElementById('num')
     let result = document.getElementById('result')
     const erro = document.getElementById('alert_boot')
+    let tabuada = document.getElementById('tabuada')
 
     erro.style.display = "none"
+    tabuada.style.display = "block"
     let numero = Number(num.value)
 
     if (num.value.length == 0){
         alert('Digite Um Número')
     } else {
-        result.innerHTML = `Tabuada do ${num.value} <br>`
+        tabuada.innerHTML = ''
         for (let c = 1; c<=10; c++){
             let multi = c * numero
-            result.innerHTML += `<h4>${numero} X ${c} = ${multi} <br></h4>`
+            let item = document.createElement('option')
+            item.text = `${numero} X ${c} = ${multi}`
+            tabuada.appendChild(item)
         }   
     }
 }
