@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="/aula14/contador.css">
-    <title>Contador</title>
+    <link rel="stylesheet" href="/aula14/tabuada.css">
+    <title>Tabuada</title>
 </head>
 <body>
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
@@ -33,22 +33,14 @@
     </header>
     <section>
       <div id="dados">
-          <div class="input-inicio">
-            <label for="inicio">Inicio: </label>
-            <input type="number" name="inicio" id="inicio">
-          </div>
-          <div class="input-fim">
-            <label for="inicio">Fim: </label>
-            <input type="number" name="fim" id="fim">
-          </div>
-          <div class="input-passo">
-            <label for="inicio">Passo: </label>
-            <input type="number" name="passo" id="passo">
-          </div>
-          <button class="btn btn-primary" type="submit" onclick="contador()" id="button">Contar</button>
+        <div id="input-number">
+          <label for="num">Número: </label>
+          <input type="number" name="num" id="num">
+          <button class="btn btn-primary" type="submit" onclick="tabuada()" id="button">Contar</button>
+        </div>
       </div>
       <div id="result">
-        Preparando a Contagem
+        Preparando tabuada
       </div>
     </section>
 
@@ -56,7 +48,7 @@
 
 
 
-    <script src="/aula14/contador.js"></script>
+    <script src="/aula14/tabuada.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>

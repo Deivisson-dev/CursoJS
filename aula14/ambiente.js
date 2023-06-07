@@ -1,3 +1,6 @@
-for (var c = 1; c<=20; c++){
-    console.log(`Esse é o Número ${c}`)
+var numero = 0
+
+for (var c = 1; c<=10; c++){
+    var multi = c * numero
+    console.log(`${numero} X ${c} = ${multi}`)
 }

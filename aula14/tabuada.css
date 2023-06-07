@@ -14,37 +14,21 @@ h1{
     color: white;
     margin-top: 25px;
 }
+
 section{
     width: 900px;
     margin: auto;
     background-color: white;
 }
 
-
 #result{
     margin-left: 25px;
-    margin-top: 10px;
 }
 
-
-.input-inicio{
-    display: flex;
+#input-number{
     padding-top: 25px;
     padding-left: 25px;
-}
-
-
-.input-fim{
-    display: flex;
-    padding-top: 25px;
-    padding-left: 25px;
-}
-
-
-.input-passo{
-    display: flex;
-    padding-top: 25px;
-    padding-left: 25px;
+    padding-bottom: 25px;
 }
 
 h3{
@@ -52,9 +36,7 @@ h3{
 }
 
 #button{
-    padding: 5px;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 5px;
 }
 
 #imagem{
@@ -72,4 +54,8 @@ svg{
     width: 1em;
     height: 1em;
     fill: currentColor;
+}
+
+h4{
+    padding-left: 25px;
 }
