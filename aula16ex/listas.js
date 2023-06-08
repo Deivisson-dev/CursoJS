@@ -8,7 +8,7 @@ let resultado = document.getElementById('resultado')
 
 function adicionar(){
     let numeros = Number(num.value)
-    if (numeros > 100){
+    if (numeros > 100 || num.value.length == 0 || valores.indexOf(numeros) != -1){
         alert('Valor Inválido ou ja encontrado na lista')
     } else {
         valores.push(numeros)
@@ -17,23 +17,30 @@ function adicionar(){
         item.text = `Valor ${numeros} adicionado.`
         lista.appendChild(item)
     }
+    num.value = ''
+    num.focus()
 }
 
 function finish(){
-    resultado.innerHTML += `<h4>Ao todo temos ${valores.length} números cadastrados</h4>`
-    var max = valores.reduce(function(a, b) {
-        return Math.max(a, b);
-      }, -Infinity);
-    resultado.innerHTML += `<h4>O Maior valor informado foi ${max}</h4>`
-    var min = valores.reduce(function(a, b) {
-        return Math.min(a, b);
-      });
-    resultado.innerHTML += `<h4>O Menor valor informado foi ${min}</h4>`
-    var sum = 0
-    for (var i = 0; i<valores.length; i++){
-       sum += valores[i]
+    if (valores.length == 0){
+        alert('Adicione Valores antes de finalizar')
+    } else {
+        resultado.innerHTML = ''
+        resultado.innerHTML += `<h4>Ao todo temos ${valores.length} números cadastrados</h4>`
+        var max = valores.reduce(function(a, b) {
+            return Math.max(a, b);
+          }, -Infinity);
+        resultado.innerHTML += `<h4>O Maior valor informado foi ${max}</h4>`
+        var min = valores.reduce(function(a, b) {
+            return Math.min(a, b);
+          });
+        resultado.innerHTML += `<h4>O Menor valor informado foi ${min}</h4>`
+        var sum = 0
+        for (var i = 0; i<valores.length; i++){
+           sum += valores[i]
+        }
+        resultado.innerHTML += `<h4>Somando todos os valores, temos ${sum}</h4>`
+        let media = sum / valores.length
+        resultado.innerHTML += `<h4>A média dos valores digitados é ${media}</h4>`
     }
-    resultado.innerHTML += `<h4>Somando todos os valores, temos ${sum}</h4>`
-    let media = sum / valores.length
-    resultado.innerHTML += `<h4>A média dos valores digitados é ${media}</h4>`
 }   

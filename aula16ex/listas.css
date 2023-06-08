@@ -60,3 +60,11 @@ h4{
     padding-top: 20px;
     padding-bottom: 5px;
 }
+
+select{
+    width: 150px;
+}
+
+#button_2{
+    margin-top: 5px;
+}
