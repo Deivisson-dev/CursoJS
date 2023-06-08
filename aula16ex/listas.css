@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body{
+    background-color: rgb(48, 48, 177);
+}
+
+h1{
+    text-align: center;
+    color: white;
+    margin-top: 25px;
+}
+
+section{
+    width: 900px;
+    margin: auto;
+    background-color: white;
+}
+
+#result{
+    margin-left: 25px;
+}
+
+#input-number{
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+
+h3{
+    padding-right: 20px;
+}
+
+#button{
+    margin-top: 5px;
+}
+
+#imagem{
+    border-radius: 50%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+}
+
+#alert_boot{
+    display: none;
+}
+
+svg{
+    width: 1em;
+    height: 1em;
+    fill: currentColor;
+}
+
+h4{
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
